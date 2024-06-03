@@ -2,20 +2,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
-
-/*
- * I declare that this code was written by me. 
- * I do not copy or allow others to copy my code. 
- * I understand that copying code is considered as plagiarism.
- * 
- * Student Name: Tan Zhen Hao Adalson
- * Student ID:22001045
- * Class: E65P
- * Date/Time Last modified:3 February 2023
- */
-
-
-
 public class WardManagement {
 
 	public static void main(String[] args) {
@@ -26,7 +12,6 @@ public class WardManagement {
 		Ward[] wardArr = new Ward[4];
 		
 		//-------------------
-		// Complete code here
 		wardArr[0] = new Ward("A","1 Bed, attached bath/toilet",10,535.00);
 		wardArr[1] = new Ward("B1","4 Bed, attached bath/toilet",20,266.43);
 		wardArr[2] = new Ward("B2","6 Bed, common bath/toilet",20,83.00);
@@ -39,7 +24,6 @@ public class WardManagement {
 		ArrayList<Patient> patientList = new ArrayList<Patient>();
 		
 		//-------------------
-		// Complete code here
 		patientList.add(new Patient("111A","John Lee","A",2,"01/12/2022"));
 		patientList.add(new Patient("222B","Mary Jane","B1",11,"02/12/2022"));
 		patientList.add(new Patient("333C","Abdul Musri","B1",12,"03/12/2022"));
@@ -115,6 +99,7 @@ public class WardManagement {
 	//static method to print the standard menu \
 	
 	//-------------------------------------------------------------------------------------------------------
+	
 	public static void publicMenu() {
 		//This is to bold text
 		System.out.println("\033[1m");
@@ -125,7 +110,6 @@ public class WardManagement {
 		System.out.print("\033[39m");
 		
 		//-------------------
-		// Complete code here
 		System.out.println("[1] < View all Ward Info >");
 		System.out.println("[2] < Display Patient List >");
 		System.out.println("[3] < Admit Patient >");
@@ -144,10 +128,10 @@ public class WardManagement {
 	//-------------------------------------------------------------------------------------------------------
 	//static method takes in a ward array and list out ward details in a tabular list
 	//-------------------------------------------------------------------------------------------------------
+	
 	public static void displayWardInfo(Ward[] wardArr) {
 
 		//-------------------
-		// Complete code here
 		System.out.println("\033[1m");
 		System.out.print("\033[34m");
 		Helper.line(24, "*");
@@ -172,10 +156,10 @@ public class WardManagement {
 	//-------------------------------------------------------------------------------------------------------
 	//static method takes in a patient arraylist and display all the patient information in a tabular list
 	//-------------------------------------------------------------------------------------------------------
+	
 	public static void displayPatientList(ArrayList<Patient> patientList) {
 
 		//-------------------
-		// Complete code here
 		System.out.print("\033[1m");
 		System.out.print("\033[34m");
 		Helper.line(24, "*");
@@ -199,11 +183,10 @@ public class WardManagement {
 	//-------------------------------------------------------------------------------------------------------
 	//static method takes in a patient arraylist and performs the admit patient functionality
 	//-------------------------------------------------------------------------------------------------------
+	
 	public static void admitPatient(ArrayList<Patient> patientList) {
 
-		//-------------------
-		// Complete code here
-		
+		//-------------------		
 		boolean validNric4 = false;
 		boolean digitNric = false;
 		boolean patientExist = true;
@@ -351,13 +334,12 @@ public class WardManagement {
 	//static method takes in a patient arraylist and performs the discharge patient functionality
 	//It will return 'true' if the patient record exist
 	//-------------------------------------------------------------------------------------------------------
+	
 	public static boolean dischargePatient(ArrayList<Patient> patientList) {
 
 		boolean patientfound = false;
 
 		//-------------------
-		// Complete code here
-		
 		System.out.println("\033[1m");
 		System.out.print("\033[34m");
 		Helper.line(29, "*");
@@ -407,13 +389,12 @@ public class WardManagement {
 	//static method takes in a patient arraylist and performs the remove patient functionality
 	//It will return 'true' if the patient record exist
 	//-------------------------------------------------------------------------------------------------------
+	
 	public static boolean removePatient(ArrayList<Patient> patientList) {
 
 		boolean patientfound = false;
 
 		//-------------------
-		// Complete code here
-
 		boolean valid = false;
 		boolean look = false;
 		//to continue looking for records and if other records is not found
@@ -487,13 +468,12 @@ public class WardManagement {
 	//static method takes in a patient arraylist and performs the register visit functionality
 	//It will return 'true' if the patient record exist
 	//-------------------------------------------------------------------------------------------------------
+	
 	public static boolean registerVisit(ArrayList<Patient> patientList) {
 
 		boolean patientfound = false;
 
 		//-------------------
-		// Complete code here
-		
 		boolean valid = false;
 		
 		System.out.println("\033[1m");
@@ -551,13 +531,12 @@ public class WardManagement {
 	//static method takes in a patient arraylist and performs the end visit functionality
 	//It will return 'true' if the patient record exist
 	//-------------------------------------------------------------------------------------------------------
+	
 	public static boolean endVisit(ArrayList<Patient> patientList) {
 
 		boolean patientfound = false;
 
 		//-------------------
-		// Complete code here
-		
 		boolean valid= false;
 		
 		System.out.println("\033[1m");
@@ -615,11 +594,10 @@ public class WardManagement {
 	//------------------------------------------------------------------------------------------------------------
 	//static method that takes in a patient arraylist, a ward array and display an overview of the ward information
 	//------------------------------------------------------------------------------------------------------------
+	
 	public static void displayWardOverview (ArrayList<Patient> patientList, Ward[] wardArr) {
 
 		//-------------------
-		// Complete code here
-		
 		int[] wardPatientArr = new int[4];
 		int[] wardVisitorArr = new int[4];
 		int totalBedCount = 0;
