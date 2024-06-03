@@ -1,4 +1,3 @@
-
 public class Ward {
 	
 	private String ward;
